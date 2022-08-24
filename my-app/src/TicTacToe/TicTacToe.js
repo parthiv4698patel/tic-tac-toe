@@ -2,9 +2,14 @@ import React from "react";
 import "./TicTacToe.css";
 
 const TicTacToe = () => {
-  const Cell = () => {
-    return <td>parthiv</td>;
+  const handleClick = () => {
+    alert("test");
   };
+
+  const Cell = ({ num }) => {
+    return <td onClick={() => handleClick()}></td>;
+  };
+
   return (
     <div className="container">
       <table>
